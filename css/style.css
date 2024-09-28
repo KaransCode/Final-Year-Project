@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  background-color: white;
+}
+.sepration{
+  height: 5px;
+  background-color: black;
+}
+.first-page {
+  height: 880px;
+}
+#background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background: url(../assets/bg1-1.jpg);
+  background-size: 1520px;
+  height: 880px;
+  width: 100%;
+}
+#background img{
+  height: 880px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.164);
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, .5);
+  backdrop-filter: blur(40px);
+}
+#nav-element {
+  z-index: 10;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.789);
+  border-radius: 33px;
+  display: flex;
+}
+#nav-element a {
+  padding: 16px;
+
+}
+#nav-element a {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+#nav-element a:focus,
+#nav-element a:hover {
+  color: #fff;
+}
+
+#nav-element a:focus:after,
+#nav-element a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+#nav-element a:after {
+  content: "";
+  pointer-events: none;
+  bottom: 17px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+#content {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}
+.logo img {
+  width: 500px;
+  z-index: 1;
+}
+#vision-mission {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 104px;
+}
+#vision-mission #box {
+  border: 2px solid black;
+  border-radius: 50px;
+  height: 530px;
+  font-size: large;
+  font-weight: 300;
+  line-height: 2;
+  width: 33.3%;
+  color: white;
+  margin-right: 10px;
+  background-color: #272747;
+  margin-left: 10px;
+}
+#container1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+#container1 #box {
+  border: 2px solid black;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  
+}
+#container2{
+  border: 2px solid black;
+  border-radius: 50px;
+  text-align: center;
+  margin: 30px;
+  height: 100px;
+  position: relative;
+  top: 0;
+} 
+#container1 #box-element{
+  margin-top: 105 px;
+}
+
+.college-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 68px 0 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons a i {
+  font-size: 24px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#quotes{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 50px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+#q-student{
+  width: 30%;
+}
+#q-student h1{
+  font-weight: 300;
+}
+#quotes img{
+  height: 400px;
+}
+#quotes-head{
+  text-align: center;
+  font-size: 46px;
+  margin: 50px;
+}
+
+.container{
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  box-sizing: border-box;
+
+}
+
+.panel{
+  background-size: auto 100%;
+  background-size: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: rgb(9, 9, 9);
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.8s ease-in-out;
+
+}
+
+.panel h1{
+  font-size: 24px;
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  margin: 0;
+  opacity: 0;
+  background-color: white;
+}
+
+.panel p{
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  margin: 0;
+  opacity: 0;
+  background-color: white;
+}
+
+.panel.active {
+  flex: 3;
+}
+.panel.active h1{
+  font-size: larger;
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0.3s;
+}
+
+.panel.active p{
+  font-size: larger;
+  opacity: 1;
+  transition: opacity 0.4s ease-in 0.3s;
+}
+
+
+@media (max-width:480px){
+  .container {
+width:100vw;
+}
+
+.panel:nth-of-type(4),.panel:nth-of-type(5) {
+display: none;
+}
+}
